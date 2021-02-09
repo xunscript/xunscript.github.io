@@ -2,7 +2,7 @@
 language: node_js
 # node版本
 node_js:
-  - 10
+  - 14
 # 设置只监听哪个分支
 branches:
   only:
@@ -28,7 +28,7 @@ before_install:
   - yarn add hexo-asset-image
   - yarn add hexo-generator-searchdb
   - yarn add hexo-generator-feed
-  # - yarn add hexo-related-popular-posts
+  - yarn add hexo-related-popular-posts
   - yarn add hexo-symbols-count-time
   - yarn add hexo-generator-sitemap
   - yarn add hexo-generator-baidu-sitemap
@@ -49,4 +49,5 @@ install:
   - yarn
 script:
   - hexo clean --config source/_data/next.yml
-  - hexo deploy -g --config source/_data/next.yml
+  - hexo g --config source/_data/next.yml
+  - hexo d --config source/_data/next.yml
