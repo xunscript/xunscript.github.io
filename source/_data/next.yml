@@ -318,8 +318,8 @@ links_settings:
   # Available values: block | inline
   layout: inline
 
-links:
-  Ahaochan: http://blog.ahao.moe
+#links:
+#  Ahaochan: http://blog.ahao.moe
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
